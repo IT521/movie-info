@@ -1,0 +1,83 @@
+{
+  "name": "movie-info",
+  "version": "1.0.0",
+  "description": "Movie Info app using MongoDB, Express, React, and Node (MERN)",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:IT521/movie-info.git"
+  },
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "lint": "eslint src -c .eslintrc.js --ext js,jsx",
+    "lintf": "eslint --fix src -c .eslintrc.js --ext js,jsx",
+    "start": "webpack-dev-server --open --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Terry S Francis",
+  "license": "MIT",
+  "keywords": [
+    "movie info",
+    "mongodb",
+    "express",
+    "react",
+    "node"
+  ],
+  "config": {
+    "port": "3000"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "autoprefixer": "^9.4.2",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-hot-loader": "^4.3.12",
+    "react-router": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/parser": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^7.0.0-beta.3",
+    "babel-core": "^7.0.0-beta.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.0-beta.6",
+    "babel-preset-env": "^7.0.0-beta.3",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-html": "^5.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.10.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.15.3",
+    "prettier-eslint": "^8.8.2",
+    "prettier-loader": "^2.1.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.27.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.8",
+    "webpack-md5-hash": "0.0.6"
+  }
+}

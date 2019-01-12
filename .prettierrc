@@ -1,0 +1,24 @@
+{
+  "overrides": [
+    {
+      "files": [".prettierrc", ".eslintrc.js"],
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "options": {
+        "parser": "babylon"
+      }
+    }
+  ],
+  "printWidth": 80,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "semi": true,
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "trailingComma": "none"
+}

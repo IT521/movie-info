@@ -1,0 +1,10 @@
+*.js eol=lf
+*.json eol=lf
+*.jsx eol=lf
+*.txt eol=lf
+*.md eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.icns binary

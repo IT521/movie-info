@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Movie Info</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="<%= htmlWebpackPlugin.files.chunks.main.css %>"
+    />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <noscript> You need to enable JavaScript to run this app.</noscript>
+    <script>
+      (function() {
+        import React from 'react';
+        import ReactDOM from 'react-dom';
+
+        import { render } from 'Utilities/render';
+        import { MoviesPage } from 'Pages/MoviesPage';
+
+        render(MoviesPage);
+
+        if (module.hot) {
+          module.hot.accept('Pages/MoviesPage', () => {
+            const NextRootContainer = require('Pages/MoviesPage').default;
+            render(NextRootContainer);
+          });
+        }
+      })();
+    </script>
+    <script
+      type="text/javascript"
+      src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"
+    ></script>
+  </body>
+</html>
