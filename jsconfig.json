@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "paths": {
+            "Components/*": ["./components/*"],
+            "Containers/*": ["./containers/*"],
+            "Pages/*": ["./pages/*"],
+            "Utilities/*": ["./utilities/*"],
+            "Configs/*": ["./config/*"],
+            "Routes/*": ["./routes/*"]
+          }      
+    },
+    "include": [
+        "./**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
